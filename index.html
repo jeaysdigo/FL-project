@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
 </head>
 
-
+<script>
+  ScrollReveal().reveal('.portfolio-card', { delay: 2000 })  ;
+  ScrollReveal().reveal('.down', { delay: 2000 })  ;
+</script>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Foreign Language</a>         
+            <a class="logo" href="#">Foreign Language 1</a>         
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -45,18 +53,22 @@
     <!-- page header -->
     <header id="home" class="header">
 
-      <img src="assets/imgs/man.png" class="bg_man">
+      <img src="assets/imgs/man.png" class="bg_man" data-aos="fade-right" data-aos-duration="1500">
     
         <!-- <div class="overlay"></div> -->
         <div class="header-content container">
             <h1 class="header-title">
               
-                <span>Nǐ hǎo!</span>
-                <span class="down">Wǒ shì Jeaysmie</span>
+                <span data-aos="fade-up" data-aos-duration="1000">Nǐ hǎo!</span>
+                <span class="down" data-aos="fade-up" data-aos-duration="1200" >Wǒ shì Jeaysmie</span>
             </h1>
-            <p class="header-subtitle">láizì BSIT-3EG1</p>            
-            
-            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+            <p class="header-subtitle" data-aos="fade-up" data-aos-duration="1500">láizì BSIT-3EG1</p>            
+            <br>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <a href="#portfolio" class="btnn" >View Portfolio</a>
+            </div>
+           
         </div>              
     </header><!-- end of page header -->
 
@@ -67,46 +79,49 @@
 
     
         <div id="portfolio"class="container text-center">
-            <h1 class="section-title mb-6">Portfolio (Zuòpǐn jí)</h1>
-            <h3  id="act" style="text-align: left">Activities</h3>
+            <h1 class="section-title mb-6" data-aos="fade-up">Portfolio (Zuòpǐn jí)</h1>
+            <h1  id="act" style="text-align: left" data-aos="fade-up" >Activities </h1>
             <!-- row -->
-            <div class="row"> 
-                <div class="col-md-3">
+            <div class="row">
+   
+      
+                <div class="col-md-3" data-aos="fade-up"
+                data-aos-duration="1000">
                     <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal">
                         <img class="portfolio-card-img" src="assets/imgs/a1.png" class="img-responsive rounded" alt="">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Activity 1</h5>
+                                <!-- <h1>一</h1> -->
                             </span>                         
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
                     <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal2">
                         <img class="portfolio-card-img" src="assets/imgs/a2.png" class="img-responsive rounded" alt="">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Activity 2</h5>
+                                <!-- <h1>二</h1> -->
                             </span>                         
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up"  data-aos-duration="1000">
                     <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal3">
                         <img class="portfolio-card-img" src="assets/imgs/a3.png" class="img-responsive rounded" alt="">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Activity 3</h5>
+                              <!-- <h1>三</h1> -->
                             </span>                         
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 " data-aos="fade-up" data-aos-duration="1000">
                     <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal4">
                         <img class="portfolio-card-img" src="assets/imgs/a4.png" class="img-responsive rounded" alt="">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Activity 4</h5>
+                                <!-- <h1>四</h1> -->
                             </span>                         
                         </span>                     
                     </a>
@@ -115,42 +130,42 @@
 <br>
              <!-- row -->
              <div class="row"> 
-              <div class="col-md-3">
+              <div class="col-md-3 " data-aos="fade-up " data-aos-duration="1000">
                   <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal5">
                       <img class="portfolio-card-img" src="assets/imgs/a5.png" class="img-responsive rounded" alt="">    
                       <span class="portfolio-card-overlay">
                           <span class="portfolio-card-caption">
-                              <h4>Activity 5</h5>
+                             <!-- <h1>五</h1> -->
                           </span>                         
                       </span>                     
                   </a>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 " data-aos="fade-up " data-aos-duration="1000">
                   <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal6">
                       <img class="portfolio-card-img" src="assets/imgs/a6.png" class="img-responsive rounded" alt="">    
                       <span class="portfolio-card-overlay">
                           <span class="portfolio-card-caption">
-                              <h4>Activity 6</h5>
+                              <!-- <h1></h1> -->
                           </span>                         
                       </span>                     
                   </a>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 " data-aos="fade-up " data-aos-duration="1000">
                   <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal7">
                       <img class="portfolio-card-img" src="assets/imgs/a7.jpg" class="img-responsive rounded" alt="">    
                       <span class="portfolio-card-overlay">
                           <span class="portfolio-card-caption">
-                              <h4>Activity 7</h5>
+                             <!-- <h1>七</h1> -->
                           </span>                         
                       </span>                     
                   </a>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 " data-aos="fade-up " data-aos-duration="1000">
                   <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal8">
                       <img class="portfolio-card-img" src="assets/imgs/a8.png" class="img-responsive rounded" alt="">    
                       <span class="portfolio-card-overlay">
                           <span class="portfolio-card-caption">
-                              <h4>Activity 8</h5>
+                              <!-- <h1>八</h1> -->
                           </span>                         
                       </span>                     
                   </a>
@@ -391,9 +406,11 @@
             <br>
             <b>Output:</b><br>
             <center>
-          <video width="100%"controls>
-              <source src="assets/src/Activity9.mp4" type="video/mp4">
-          </video>
+        
+          
+              <iframe src="https://drive.google.com/file/d/1sQly_Et5NuP6kMlunWvdQdSNzltTlrJQ/preview" width="640" height="480"></iframe>
+         
+       
           </center>
         </div>
         <div class="modal-footer">
@@ -404,15 +421,16 @@
 
 
 <div id="proj" class="container" >
-  <h3 style="text-align: left">Final Project</h3>
+  <h1 style="text-align: left" data-aos="fade-up" data-aos-duration="1000">Final Project</h1>
 <!-- row -->
-<div class="row"> 
-    <div class="col-md-6">
+<div class="row " data-aos="fade-up" data-aos-duration="1000"> 
+    <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000"></div>
         <a class="portfolio-card" data-toggle="modal" data-target="#exampleModal9">
-            <img class="portfolio-card-img" src="assets/imgs/" class="img-responsive rounded" alt="">    
+            <img class="portfolio-card-img" src="assets/imgs/a9.png" class="img-responsive rounded" alt="">    
             <span class="portfolio-card-overlay">
                 <span class="portfolio-card-caption">
-                    <h4>Final Project</h5>
+                  
+  
                 </span>                         
             </span>                     
         </a>
@@ -421,7 +439,25 @@
 </div><!-- end of row -->
 </div>
 
+<br>
+<br>
+<br>
+<br>
 
+<br>
+<br>
+<br>
+<br>
+<div class="container"></div>
+  <center>  <h2 data-aos="fade-up" data-aos-duration="1500"> "My Mandarin Learning Journey <br>will not end here." </h2>
+    <br> <h4 data-aos="fade-up" data-aos-duration="2000"> "I will continue learning" </h4>
+   </center>
+
+</div>
+<br>
+<br>
+<br>
+<br>
     <!-- footer -->
     <div class="container">
         <footer class="footer">       
@@ -446,6 +482,9 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
